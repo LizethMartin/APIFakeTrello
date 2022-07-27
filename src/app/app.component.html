@@ -1,3 +1,62 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<ion-content >
+  <div id="image">
+    <img src="https://www.dcuniverseinfinite.com/coming-soon/assets/img/intro-video-bg.jpg" alt="">
+    <p>DC CHARACTERS</p>
+  </div>
+  <div id="phrase">
+    <p > “LA ERA DE LOS HÉROES REGRESARÁ.
+      <br> TIENE QUE HACERLO”
+    </p>
+  </div>
+  <div id="characters" class="stripe">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2"></ion-col>
+        <ion-col size="8">
+          <ion-row>
+            <ion-col size-sm="12" size-md="4" *ngFor="let character of  characters">
+              <ion-card (mouseover)="hover(character.id)">
+                <ion-card-header  id="card{{character.id}}" class="text-center classvisible">
+                  <div id="content">
+                    <img src="{{character.images.sm}}" alt="">
+                    <ion-card-title>{{character.biography.aliases[0]}}</ion-card-title>
+                    <ion-card-subtitle>{{character.biography.aliases[1]}}</ion-card-subtitle>
+                    <ion-button color="favorite2" (click)="goBack(character.id)">See details</ion-button>
+                  </div>
+                </ion-card-header>
+                <ion-card-header id="cardT{{character.id}}" class="text-center classinvisible">
+                  <ion-button color="favorite" id="btnCloseCard" fill="clear" (click)="goOutCard(character.id)">
+                    <ion-icon color="favorite" name="close-outline"></ion-icon>
+                  </ion-button>
+                  <div id="content">
+                    <h2 id="appearance">Appearance</h2>
+                    <p>
+                      <b>Eye Color: &nbsp;</b>{{character.appearance.eyeColor}}
+                      <br><b>Gender: &nbsp;</b>{{character.appearance.gender}}
+                      <br><b>Hair Color: &nbsp;</b>{{character.appearance.hairColor}}
+                    </p>
+                    <h2 id="power">Power Stats</h2>
+                    <p>
+                      <b>Combat: &nbsp;</b>{{character.powerstats.combat}}
+                      <br><b>Power: &nbsp;</b>{{character.powerstats.power}}
+                      <br><b>Strength: &nbsp;</b>{{character.powerstats.strength}}
+                      <br><b>Speed: &nbsp;</b>{{character.powerstats.speed}}
+                      <br><b>Intelligence: &nbsp;</b>{{character.powerstats.intelligence}}
+                      <br><b>Durability: &nbsp;</b>{{character.powerstats.durability}}
+                    </p>
+                  </div>
+
+                </ion-card-header>
+              </ion-card>
+
+            </ion-col>
+          </ion-row>
+
+        </ion-col>
+
+        <ion-col size="2"></ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </div>
+</ion-content>

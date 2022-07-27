@@ -1,0 +1,146 @@
+#phrase {
+    background-color: #0A1926;
+
+    p {
+        margin: 0%;
+        font-family: 'Bitter', serif;
+        font-family: 'Ubuntu', sans-serif;
+        color: #FFFF;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 5.57vh;
+        text-align: center;
+    }
+
+    p:hover {
+        color: #fff93e;
+        animation: pulse;
+        animation-duration: 2s;
+    }
+}
+
+#image {
+    background-color: #0A1926;
+
+    p {
+        position: absolute;
+        top: 36%;
+        z-index: 4;
+        left: 25%;
+        right: 17.5%;
+        font-family: 'Arimo', sans-serif;
+        font-family: 'Bitter', serif;
+        font-family: 'Ubuntu', sans-serif;
+        font-style: italic;
+        font-weight: 900;
+        color: #FFFF;
+        font-size: 10.57vh;
+        z-index: 2;
+    }
+    p:hover {
+        animation: wobble;
+        animation-duration: 2s;
+    }
+}
+
+#characters {
+    background-color: #04090D;
+
+    ion-card {
+        text-align: right;
+
+        #content {
+            text-align: center;
+        }
+
+        #power {
+            color: #55cfff;
+        }
+
+        #appearance {
+            color: #7ad553;
+        }
+
+        p {
+            color: #05090D;
+        }
+    }
+    ion-card:hover {
+        animation: tada;
+        animation-duration: 2s;
+    }
+}
+
+.classvisible {
+    display: block !important;
+}
+
+.classinvisible {
+    display: none !important;
+}
+
+// animations
+@keyframes hvr-bob {
+    0% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+
+.hvr-bob {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hvr-bob-float, hvr-bob;
+    animation-name: hvr-bob-float, hvr-bob;
+    -webkit-animation-duration: 0.3s, 1.5s;
+    animation-duration: 0.3s, 1.5s;
+    -webkit-animation-delay: 0s, 0.3s;
+    animation-delay: 0s, 0.3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
+
+@keyframes hvr-bob-float {
+    100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+
+.hvr-bob:hover,
+.hvr-bob:focus,
+.hvr-bob:active {
+    -webkit-animation-name: hvr-bob-float, hvr-bob;
+    animation-name: hvr-bob-float, hvr-bob;
+    -webkit-animation-duration: 0.3s, 1.5s;
+    animation-duration: 0.3s, 1.5s;
+    -webkit-animation-delay: 0s, 0.3s;
+    animation-delay: 0s, 0.3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}

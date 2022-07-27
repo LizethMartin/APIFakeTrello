@@ -24,3 +24,45 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Ubuntu:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,700&family=Bitter:wght@600&family=Ubuntu:wght@500;700&display=swap');
+
+/* animatecss*/
+@import "~animate.css/animate.min.css";
+
+:root {
+    --ion-color-favorite2: #B8C95F;
+    --ion-color-favorite2-rgb: 105, 187, 123;
+    --ion-color-favorite2-contrast: #ffffff;
+    --ion-color-favorite2-contrast-rgb: 255, 255, 255;
+    --ion-color-favorite2-shade: #859245;
+    --ion-color-favorite2-tint: #c0e700;
+}
+:root {
+    --ion-color-favorite: #BA0320;
+    --ion-color-favorite-rgb: 105, 187, 123;
+    --ion-color-favorite-contrast: #ffffff;
+    --ion-color-favorite-contrast-rgb: 255, 255, 255;
+    --ion-color-favorite-shade: #75081abc;
+    --ion-color-favorite-tint: #e70027;
+}
+
+.ion-color-favorite {
+    --ion-color-base: var(--ion-color-favorite);
+    --ion-color-base-rgb: var(--ion-color-favorite-rgb);
+    --ion-color-contrast: var(--ion-color-favorite-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-favorite-contrast-rgb);
+    --ion-color-shade: var(--ion-color-favorite-shade);
+    --ion-color-tint: var(--ion-color-favorite-tint);
+}
+
+.ion-color-favorite2 {
+    --ion-color-base: var(--ion-color-favorite2);
+    --ion-color-base-rgb: var(--ion-color-favorite2-rgb);
+    --ion-color-contrast: var(--ion-color-favorite2-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-favorite2-contrast-rgb);
+    --ion-color-shade: var(--ion-color-favorite2-shade);
+    --ion-color-tint: var(--ion-color-favorite2-tint);
+}
